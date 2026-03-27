@@ -20,3 +20,8 @@ if __name__ == "__main__":
 
     profit_loss = calculate_profit_loss(initial_investment, current_value, fees)
     print(f"Profit/Loss: ${profit_loss:.2f}")
+
+def profit_percentage(initial, profit_loss):
+    """Calculate profit percentage"""
+    return (profit_loss / initial) * 100
+
